@@ -18,7 +18,7 @@ router.get('/',(req,res)=>{
 router.get('/api/input1/:value',(req,res)=>{
     const content = req.params.value;
     try {
-    const data = fs.appendFileSync('data/output1.txt', content+'\n')
+    const data = fs.appendFileSync('output1.txt', content+'\n')
     res.send('Successfully Written in text 1 file');
     } catch (err) {
     console.error(err)
@@ -29,7 +29,7 @@ router.get('/api/input1/:value',(req,res)=>{
 router.get('/api/input2:value',(req,res)=>{
     const content = req.params.value;
     try {
-    const data = fs.appendFileSync('data/output2.txt', content+'\n')
+    const data = fs.appendFileSync('output2.txt', content+'\n')
     res.send('Successfully Written in text 2 file');
     } catch (err) {
     console.error(err)
