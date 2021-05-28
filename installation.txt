@@ -1,0 +1,3 @@
+1-Clone the repository
+2-install node modules by typing npm install in terminal
+3-to start server type nodemon start which is live server for our express app
